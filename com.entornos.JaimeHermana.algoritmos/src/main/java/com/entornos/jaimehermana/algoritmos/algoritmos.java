@@ -32,9 +32,10 @@ public abstract class algoritmos {
         // Si no quieres imprimirla, comenta la siguiente línea:
         return actual;
     }
-    
+
     /**
      * Recibe un número entero y devuelve el factorial de dicho número
+     *
      * @param numero
      * @return numero factorial de dicho numero
      */
@@ -44,6 +45,24 @@ public abstract class algoritmos {
         } else {
             return numero * factorial(numero - 1);
         }
+    }
+    
+    /**
+     * Recibe un número entero y devuelve true o false en función de si es primo o no
+     * 
+     * @param numero
+     * @return Devuelve si el numero es primo o no
+     */
+    public static boolean Numeroprimo (int numero) {
+        int contador = 2;
+        boolean primo = true;
+        while ((primo) && (contador != numero)) {
+            if (numero % contador == 0) {
+                primo = false;
+            }
+            contador++;
+        }
+        return primo;
     }
 
 }

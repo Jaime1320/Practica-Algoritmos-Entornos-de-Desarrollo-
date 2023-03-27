@@ -14,13 +14,14 @@ package com.entornos.jaimehermana.algoritmos;
  * primos
  */
 public abstract class algoritmos {
-
+    
     /**
      * Recibe un número entero y devuelve el número de fibonacci de dicho número
      *
      * @param posicion
      * @return numero fibonacci de dicho numero
      */
+    
     public static int fibonacci(int posicion) {
         int siguiente = 1, actual = 0, temporal = 0;
         for (int i = 1; i <= posicion; i++) {
@@ -39,7 +40,7 @@ public abstract class algoritmos {
      * @param numero
      * @return numero factorial de dicho numero
      */
-    public int factorial(int numero) {
+    public static int factorial(int numero) {
         if (numero == 0) {
             return 1;
         } else {
